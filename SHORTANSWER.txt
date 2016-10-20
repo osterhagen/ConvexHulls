@@ -1,0 +1,20 @@
+Describe how you handle degenerate cases in the graham scan and gift-wrapping algorithm.
+
+
+
+
+Describe the best and worst inputs to the Graham Scan algorithm
+
+
+
+
+Compare the running times of the two algorithms on best, worst, and random inputs
+
+
+
+
+Suppose the points are restricted to a d-by-d grid. What are the time and memory complexity of Graham Scan using radix sort? There is a version of Graham scan that sorts along the X axis. How does this change the complexity of the algorithm?
+
+
+
+
