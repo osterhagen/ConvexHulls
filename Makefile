@@ -9,7 +9,7 @@ CXX:=g++
 #Enable warnings and include directories here
 CFLAGS:=-Wall
 #Linker line - add libraries that need to be referenced here
-LDFLAGS:=-g -O0 -lGL -lGLU -lglut # -lrt -lm
+LDFLAGS:=-framework OpenGl -framework GLUT
 #Uses the c++11 stdlib
 STDLIB:=-std=c++11
 

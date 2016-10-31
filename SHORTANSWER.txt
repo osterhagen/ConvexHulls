@@ -10,10 +10,19 @@ Describe the best and worst inputs to the Graham Scan algorithm
 
 Compare the running times of the two algorithms on best, worst, and random inputs
 
+    Best:
+        Gift Wrap:
+        Graham Scan:
+    Worst:
+        Gift Wrap:
+        Graham Scan: n log n
+    Random / Average:
+        Gift Wrap:
+        Graham Scan:
 
 
-
-Suppose the points are restricted to a d-by-d grid. What are the time and memory complexity of Graham Scan using radix sort? There is a version of Graham scan that sorts along the X axis. How does this change the complexity of the algorithm?
+Suppose the points are restricted to a d-by-d grid. What are the time and memory complexity of Graham Scan using radix sort?
+There is a version of Graham scan that sorts along the X axis. How does this change the complexity of the algorithm?
 
 
 

@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <math.h>
+#include <iostream>
+
 using namespace std;
 
 inline int sign(int i) { return i > 0 ? 1 : (i == 0 ? 0 : -1); }
@@ -25,12 +27,6 @@ public:
 
     Point operator-(const Point &a) const { return Point(x - a.x, y - a.y); }
 
-
-
-    // added for convenience
-    //int magnitude(const Point &a) { return sqrt(( (a.getX()) * (a.getX()) - (a.getY()) * (a.getY()) )); }
-
-
     // dot returns the dot product between the current Point (this) and the passed
     // in Point (a)
     int dot(const Point &a) const {
@@ -42,22 +38,23 @@ public:
     // passed in Point (a)
     int cross(const Point &a) const {
       // TODO
-      return a.getY()*(this->getX()) + a.getY()*(this->getX()) ;
+      return (a.getY()*(this->getX()) ) - (a.getX()*(this->getY()));
     }
 
     // distanceSquared returns the square of the distance between this and a
     int distanceSquared(const Point &a) const {
       // TODO
       Point u = a - *this;
-        //(sqrt(10^2+20^2)-sqrt(4^2+5^2))^2
+  return ((a.getX()-(this->getX())) * (a.getX()-(this->getX())) )+((a.getY()-this->getY())* (a.getY()-this->getY()));
 
     }
 
     // leftTurn returns 1 if the point c would turn left from the line of this to
     // b.
     int leftTurn(const Point &b, const Point &c) const {
-      // TODO
-      return 0;
+        if ( ((b.getX() - ((this->getX())))*(c.getY() - (this->getY()))) - ((b.getY() - (this->getY()))*(c.getX() - (this->getX()))) > 0)
+            return 1;
+        else return 0;
     }
 };
 
